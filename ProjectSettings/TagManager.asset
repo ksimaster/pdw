@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PlanetBase
+  - BuildManager
+  - EnemyShips
+  - ShieldButton
+  - EnemyProjectilesPool
+  - PlayerProjectilesPool
+  - FxTemporaire
+  - VFXs
+  - MusicManager
+  - SFXManager
+  - InfoDialog
+  - EnemyShipsPool
+  - EnemyProjectile
+  - PlayerProjectile
+  - PlayerScrapProjectile
+  - PlayerMissileProjectile
+  - EnemyMissile
+  - EnemyNuke
+  - MachineGunSFX
+  - LaserTurretSFX
+  - Harpoon
+  - MenuInGame
+  - PortalsPool
+  - GameManager
+  - AudioManager
+  - WarningDialog
+  - SpawnManager
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Planet
+  - Water
+  - UI
+  - Projectiles
+  - Shield
+  - Ships
+  - Post Process
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

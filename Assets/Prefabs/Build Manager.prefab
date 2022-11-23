@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &802093338995590701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 802093338995590700}
+  - component: {fileID: 802093338995590703}
+  m_Layer: 0
+  m_Name: Build Manager
+  m_TagString: BuildManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &802093338995590700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802093338995590701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802093338995590703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802093338995590701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3f49be0e4c06b45b4caf5ed9d5fc32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overlay: {fileID: 0}
+  buildMenu: {fileID: 0}
+  infoDialog: {fileID: 0}
+  buildMenuButtons: {fileID: 0}
+  shieldDomeButton: {fileID: 0}
+  totalEnergyText: {fileID: 0}
+  energyProductionText: {fileID: 0}
+  slider: {fileID: 0}
+  powerGeneratorText: {fileID: 0}
+  buildingsSlotGroups:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  slow_time_on: {fileID: 8300000, guid: 45e36f541bdb5054496f3c5376af038a, type: 3}
+  slow_time_off: {fileID: 8300000, guid: d58d480a42ff1fd4d85085254cdee13f, type: 3}
+  add_button: {fileID: 8300000, guid: 8c0caaa57539aed43a316e7c918712f8, type: 3}
+  buy_building: {fileID: 8300000, guid: 621e31dccf313e4488b0a8b824e351e0, type: 3}
+  initialEnergy: 1200
+  energyIncrease: 10
+  productionTime: 10
