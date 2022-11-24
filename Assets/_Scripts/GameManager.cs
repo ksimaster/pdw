@@ -239,7 +239,7 @@ public class GameManager : MonoBehaviour
         SpawnManager spawnM = GameObject.FindGameObjectWithTag("SpawnManager").GetComponent<SpawnManager>();
 
         int currentWave = spawnM.WaveCounter + 1;
-        endDialogWaveCounter.text = $"Wave {currentWave}";
+        endDialogWaveCounter.text = $"ÂÎËÍÀ {currentWave}";
     }
 
     void SingletonMe()

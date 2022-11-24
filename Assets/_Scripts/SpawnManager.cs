@@ -193,13 +193,13 @@ public class SpawnManager : MonoBehaviour
         switch (currentThreatLevel)
         {
             case threatLevel.Easy:
-            return "LOW";
+            return "ÍÈÇÊÈÉ";
             case threatLevel.Middle:
-            return "MIDDLE";
+            return "ÑĞÅÄÍÈÉ";
             case threatLevel.High:
-            return "HIGH";
+            return "ÂÛÑÎÊÈÉ";
             default:
-            return "NO";
+            return "ÍÅÒ";
         }
     }
 

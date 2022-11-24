@@ -11,13 +11,13 @@ public class TutorialTips : MonoBehaviour
 
     string[] tips =
     {
-        "Use the WASD keys or arrow keys to move the camera. You can zoom in or out with the mouse scroll or + / - button.",
-        "Press the space bar to slow down time and open the construction menu. Study the characteristics of the buildings to optimize the defense centers.",
-        "Scan your surroundings when you hear the danger alarm to anticipate your defenses against threats.",
-        "Use energy to construct buildings and defend the planet. The planet will produce a small amount of energy periodically.",
-        "In each defense center there are 5 available construction slots. You can cancel or demolish the construction at any time.",
-        "The circular bar in the center shows the planetґs health. In the inner circle you can see how much energy is being produced and stored.",
-        "Press ESC to open the game menu. You can enable/disable these tips, level the sound, or restart the game."
+        "Используйте клавиши WASD или клавиши со стрелками для перемещения камеры. Вы можете увеличивать или уменьшать масштаб с помощью прокрутки мыши или кнопки + / -",
+        "Нажмите пробел, чтобы замедлить время и открыть меню строительства. Изучите характеристики зданий, чтобы оптимизировать центры обороны.",
+        "Готовитесь к обороне, когда услышите сигнал тревоги.",
+        "Используйте энергию для строительства зданий и защиты планеты. Планета будет периодически производить небольшое количество энергии.",
+        "В каждом центре обороны есть 5 доступных строительных слотов. Вы можете отменить или снести строительство в любое время.",
+        "Круглая полоска в центре показывает состояние планеты. Во внутреннем круге вы можете видеть, сколько энергии производится и накапливается.",
+        "Нажмите ESC, чтобы открыть игровое меню. Вы можете включить / отключить эти подсказки, изменить громкость или перезапустить игру."
     };
 
     int tutorialIndex;
