@@ -149,11 +149,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df6777772a2891f40a2317c4b62c0c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitShieldDome_VFX: {fileID: 8324587349425248638, guid: 5d3560ea2ae36d948bedf4905e371a06, type: 3}
-  destroyShieldDome_VFX: {fileID: 6372801955257586391, guid: 089c3bbd2b240ed47bb4b9cab376ce3a, type: 3}
-  impactMissileExplosion_VFX: {fileID: 5309974952114696543, guid: 94f81155450628e4480c4e177e67e610, type: 3}
-  impactNukeExplosion_VFX: {fileID: 191140964144684813, guid: 74290697c53204e41ae6330700cd0bd1, type: 3}
-  impactShipExplosion_VFX: {fileID: 7152897301623749625, guid: 90fe223197404874b89b16abc9d4dddb, type: 3}
+  hitShieldDome_VFX: {fileID: 100006, guid: c192100837a922b42a4df399fd0aad90, type: 3}
+  destroyShieldDome_VFX: {fileID: 100014, guid: f24e26c15aed64d46a66cda12eca06d1, type: 3}
+  impactMissileExplosion_VFX: {fileID: 100006, guid: f787eda8da8532945bdeea8b37e0a8dc, type: 3}
+  impactNukeExplosion_VFX: {fileID: 100006, guid: 7465c5a80a4592c479524e6b4a2a2495, type: 3}
+  impactShipExplosion_VFX: {fileID: 100006, guid: ac7f54fe5f2db6f4f920529ec1ea5018, type: 3}
   shieldDomeBroken_SFX: {fileID: 8300000, guid: 4763da2ca42aab5499be02a2e40e6586, type: 3}
   shieldDomeActive_SFX: {fileID: 8300000, guid: aadf2e6784098284f863ef5dc4d14704, type: 3}
   explosionProjectile_SFX: {fileID: 8300000, guid: 03663a3ea0453344bad4d6134ec1265f, type: 3}
