@@ -524,6 +524,7 @@ PolygonCollider2D:
       - {x: 1.2099999, y: -3.87}
       - {x: 1.25, y: -3.83}
       - {x: 2.2, y: -3.83}
+  m_UseDelaunayMesh: 0
 --- !u!1 &8240689584620957394
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,12 +849,12 @@ MonoBehaviour:
   shield: {fileID: 8240689584125598838}
   healthSlider: {fileID: 8240689584721276056}
   shieldSlider: {fileID: 8240689584620957396}
-  hitShield_VFX: {fileID: 229549574682713921, guid: d8d61d5111c825f4fa09d3901d2452ba, type: 3}
-  hitHull_VFX: {fileID: 6387031879810684171, guid: df200afe6271b004cbd446bbe19c4a91, type: 3}
-  shieldDestroy_VFX: {fileID: 6372801955257586391, guid: 089c3bbd2b240ed47bb4b9cab376ce3a, type: 3}
-  shipDestroy_VFX: {fileID: 1667828814960613737, guid: 35d7db21a2d9226418b0e018e5de6784, type: 3}
-  impactScrap_VFX: {fileID: 1029294923509441464, guid: 20376874edf16d741bdfe3a0978c075e, type: 3}
-  impactMissileExplosion_VFX: {fileID: 5309974952114696543, guid: 94f81155450628e4480c4e177e67e610, type: 3}
+  hitShield_VFX: {fileID: 100006, guid: 1c799c88b2f80994bb7a99169a569590, type: 3}
+  hitHull_VFX: {fileID: 100006, guid: 9a2673ec76cfae147aa9e4dd039e03b3, type: 3}
+  shieldDestroy_VFX: {fileID: 100014, guid: df1a4628725aaab448f7397a77463621, type: 3}
+  shipDestroy_VFX: {fileID: 100006, guid: 4ba98f77196144144a53836b38f78e50, type: 3}
+  impactScrap_VFX: {fileID: 100006, guid: 9a2673ec76cfae147aa9e4dd039e03b3, type: 3}
+  impactMissileExplosion_VFX: {fileID: 100006, guid: a6e49655c94809a44b2803de065607c5, type: 3}
   shipShieldBroken_SFX: {fileID: 8300000, guid: 2ed243d3fa6bfa044b230378ab52df3f, type: 3}
   explosionShip_SFX: {fileID: 8300000, guid: 564359a95cad25744b30beeb0c71a14f, type: 3}
   hullHP: 200
@@ -1143,6 +1144,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 5
   m_TargetDisplay: 0
@@ -1191,6 +1193,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 8240689584692881480}
     m_Modifications:
     - target: {fileID: 5085564833040664951, guid: abe6b4f4a668cee4199130853c0022d3, type: 3}
@@ -1258,6 +1261,7 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: abe6b4f4a668cee4199130853c0022d3, type: 3}
 --- !u!1 &2900716305560374099 stripped
 GameObject:
@@ -1274,6 +1278,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 8240689584692881480}
     m_Modifications:
     - target: {fileID: 5085564833040664951, guid: abe6b4f4a668cee4199130853c0022d3, type: 3}
@@ -1341,6 +1346,7 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: abe6b4f4a668cee4199130853c0022d3, type: 3}
 --- !u!1 &2900716304824888032 stripped
 GameObject:
@@ -1357,6 +1363,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 8240689584692881480}
     m_Modifications:
     - target: {fileID: 5085564833040664951, guid: abe6b4f4a668cee4199130853c0022d3, type: 3}
@@ -1424,6 +1431,7 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: abe6b4f4a668cee4199130853c0022d3, type: 3}
 --- !u!1 &2900716304746580524 stripped
 GameObject:
