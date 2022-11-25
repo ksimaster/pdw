@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  explosion_VFX: {fileID: 5309974952114696543, guid: 94f81155450628e4480c4e177e67e610, type: 3}
+  explosion_VFX: {fileID: 100004, guid: 32aaffc8d358a044086e041dce07e2ab, type: 3}
 --- !u!114 &5969135321572021312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +159,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1945154418244304462}
     m_Modifications:
     - target: {fileID: 1444006599596871544, guid: 9631027dd3c697c46af740aed65f5271, type: 3}
@@ -222,6 +223,7 @@ PrefabInstance:
       value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 9631027dd3c697c46af740aed65f5271, type: 3}
 --- !u!4 &616473338074815281 stripped
 Transform:
