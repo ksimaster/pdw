@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     private float time = 0;
     public TextMeshProUGUI timeText;
+    public GameObject bodyPlanet;
 
     public void StartTimer()
     {
@@ -18,10 +19,18 @@ public class Timer : MonoBehaviour
     {
         while(time > -1)
         {
-            yield return new WaitForSeconds(1f);
-            time += 1;
-            timeText.text = time.ToString();
-            PlayerPrefs.SetFloat("time", time);
+            if (bodyPlanet.activeSelf)
+            {
+                yield return new WaitForSeconds(1f);
+                time += 1;
+                timeText.text = time.ToString();
+                PlayerPrefs.SetFloat("time", time);
+            }
+            else
+            {
+                break;
+            }
+
             if(PlayerPrefs.HasKey("bestTime"))
             {
                 if (PlayerPrefs.GetFloat("time") > PlayerPrefs.GetFloat("bestTime")) PlayerPrefs.SetFloat("bestTime", time);

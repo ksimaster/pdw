@@ -1811,6 +1811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 1080258731}
+  bodyPlanet: {fileID: 1768036372272979991}
 --- !u!4 &1691724955
 Transform:
   m_ObjectHideFlags: 0
@@ -4533,6 +4534,11 @@ PrefabInstance:
 --- !u!1 &1768036372272979990 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7325014153530717543, guid: 5301fda553b90154190847e1a49898a2, type: 3}
+  m_PrefabInstance: {fileID: 1768036372272979989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1768036372272979991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1768036372509695759, guid: 5301fda553b90154190847e1a49898a2, type: 3}
   m_PrefabInstance: {fileID: 1768036372272979989}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2127199814492628395
