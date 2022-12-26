@@ -9,7 +9,7 @@ public static class WebGLPluginJS
     public static extern void CallFunction();
     // Importing "SetLeder" add ksimaster
     [DllImport("__Internal")]
-    public static extern void SetLeder();
+    public static extern void SetLeder(int best);
     // Importing "ShareFunction" add ksimaster
     [DllImport("__Internal")]
     public static extern void ShareFunction();
