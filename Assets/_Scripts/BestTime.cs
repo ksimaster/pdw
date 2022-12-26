@@ -14,7 +14,11 @@ public class BestTime : MonoBehaviour
 
     public void SetBestTime()
     {
-        bestTime.text = PlayerPrefs.GetFloat("bestTime").ToString();
+        bestTime.text = PlayerPrefs.GetInt("bestTime").ToString();
+        int best = PlayerPrefs.GetInt("bestTime");
+#if UNITY_WEBGL && !UNITY_EDITOR
+    	            WebGLPluginJS.SetLeder(best);
+#endif
     }
 
 }

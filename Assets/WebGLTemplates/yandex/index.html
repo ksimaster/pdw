@@ -18,9 +18,54 @@
       .then(ysdk => {
         console.log('Yandex SDK initialized');
         sdk = ysdk;
+        auth();
+        initLederboard();
         sdk.adv.showFullscreenAdv();
 
       });
+      var player;
+
+    function initPlayer() {
+      return sdk.getPlayer().then(_player => {
+        player = _player;
+
+        return player;
+      });
+    }
+    function auth(){
+      initPlayer().then(_player => {
+        if (_player.getMode() === 'lite') {
+            // Игрок не авторизован.
+            sdk.auth.openAuthDialog().then(() => {
+                    // Игрок успешно авторизован
+                    initPlayer().catch(err => {
+                        // Ошибка при инициализации объекта Player.
+                      });
+                  }).catch(() => {
+                    // Игрок не авторизован.
+                  });
+                }
+              }).catch(err => {
+        // Ошибка при инициализации объекта Player.
+      });
+    }
+    // подключение лидерборда
+    var lb;
+    function initLederboard(){
+      sdk.getLeaderboards()
+        .then(_lb => {
+          lb = _lb;
+          console.log('Leaderboard initialized');
+        });
+    }
+    
+    
+    function setLederboard(best){
+      sdk.getLeaderboards()
+        .then(lb => {
+          lb.setLeaderboardScore('leader', best);
+        });
+    } 
     </script>
     <script>
 

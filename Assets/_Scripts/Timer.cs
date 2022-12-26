@@ -6,7 +6,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    private float time = 0;
+    private int time = 0;
     public TextMeshProUGUI timeText;
     public GameObject bodyPlanet;
 
@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 time += 1;
                 timeText.text = time.ToString();
-                PlayerPrefs.SetFloat("time", time);
+                PlayerPrefs.SetInt("time", time);
             }
             else
             {
@@ -33,11 +33,22 @@ public class Timer : MonoBehaviour
 
             if(PlayerPrefs.HasKey("bestTime"))
             {
-                if (PlayerPrefs.GetFloat("time") > PlayerPrefs.GetFloat("bestTime")) PlayerPrefs.SetFloat("bestTime", time);
+                if (PlayerPrefs.GetInt("time") > PlayerPrefs.GetInt("bestTime")) 
+                {
+                    PlayerPrefs.SetInt("bestTime", time);
+                    int best = PlayerPrefs.GetInt("bestTime");
+#if UNITY_WEBGL && !UNITY_EDITOR
+    	            WebGLPluginJS.SetLeder(best);
+#endif
+                }
             }
             else
             {
-                PlayerPrefs.SetFloat("bestTime", time);
+                PlayerPrefs.SetInt("bestTime", time);
+                int best = PlayerPrefs.GetInt("bestTime");
+#if UNITY_WEBGL && !UNITY_EDITOR
+    	            WebGLPluginJS.SetLeder(best);
+#endif
             }
         }
         

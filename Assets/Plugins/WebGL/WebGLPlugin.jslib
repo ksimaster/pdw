@@ -4,6 +4,10 @@ mergeInto(LibraryManager.library, {
       // Show a message as an alert
       window.showAdv();
    },
+      // Function SetLeder(add ksimaster)
+   SetLeder: function (value) {
+      setLederboard(value);
+   },
    // Function Share (add ksimaster)
    ShareFunction: function () {
       // Show a message as an alert
