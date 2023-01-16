@@ -4,22 +4,33 @@ mergeInto(LibraryManager.library, {
       // Show a message as an alert
       window.showAdv();
    },
-      // Function SetLeder(add ksimaster)
-   SetLeder: function (value) {
-      setLederboard(value);
-   },
    // Function Share (add ksimaster)
    ShareFunction: function () {
       // Show a message as an alert
       window.showShare();
    },
-   // Function GetLang(add ksimaster)
-   GetLang: function () {
-      var lang = sdk.environment.i18n.lang;
-      var bufferSize = lengthBytesUTF8(lang) + 1;
+      // Function SetLeder(add ksimaster)
+   SetLeder: function (value) {
+      setLederboard(value);
+   },
+   // Function GetAuth(add ksimaster)
+   GetAuth: function () {
+      //var player;
+      var isAuthorzation = "no";
+        if (!(player.getMode() === 'lite')) 
+        {
+          console.log('Player autorization: YES!!!' );
+          isAuthorzation = "yes";
+         }
+     
+      var bufferSize = lengthBytesUTF8(isAuthorzation) + 1;
       var buffer = _malloc(bufferSize);
-      stringToUTF8(lang, buffer, bufferSize);
+      stringToUTF8(isAuthorzation, buffer, bufferSize);
       return buffer;
+   },
+   // Function SetAuth(add ksimaster)
+   SetAuth: function () {
+      setAuth();
    },
    // Function InterstitialFunction (add ksimaster)
    InterstitialFunction: function () {
@@ -31,9 +42,10 @@ mergeInto(LibraryManager.library, {
       // Show a message as an alert
       window.showAdReward();
    },
-      // Function SetEnglishFunction (add ksimaster)
-   SetEnglishFunction: function () {
-      SetEnglish();
+   // Function autorization (add ksimaster)
+   Hello: function () {
+      window.alert("Hello!");
+      console.log("Hello!");
    },
    // Function with the text param
    PassTextParam: function (text) {

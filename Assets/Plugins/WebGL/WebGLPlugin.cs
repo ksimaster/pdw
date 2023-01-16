@@ -7,15 +7,22 @@ public static class WebGLPluginJS
     // Importing "CallFunction"
     [DllImport("__Internal")]
     public static extern void CallFunction();
-    // Importing "SetLeder" add ksimaster
+    //Importing SetLeder
     [DllImport("__Internal")]
     public static extern void SetLeder(int best);
+    
+    //Importing GetAuth
+    [DllImport("__Internal")]
+    public static extern string GetAuth();
+    // Importing SetAuth
+    [DllImport("__Internal")]
+    public static extern void SetAuth();
+    // Importing "Hello"
+    [DllImport("__Internal")]
+    public static extern void Hello();
     // Importing "ShareFunction" add ksimaster
     [DllImport("__Internal")]
     public static extern void ShareFunction();
-    // Importing "ShareFunction" add ksimaster
-    [DllImport("__Internal")]
-    public static extern void AutoSaveEnglishFunction();
     // Importing "RewardFunction" add ksimaster
     [DllImport("__Internal")]
     public static extern void RewardFunction();
@@ -26,10 +33,6 @@ public static class WebGLPluginJS
     [DllImport("__Internal")]
     public static extern void PassTextParam(string text);
 
-    // Importing "ChangeLanguageFunction" add ksimaster
-    [DllImport("__Internal")]
-    public static extern void SetEnglishFunction(string message);
-    // Importing "ChangeLanguageFunction" add ksimaster
     [DllImport("__Internal")]
     public static extern void PassNumberParam(int number);
     // Importing "GetTextValue"
